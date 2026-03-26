@@ -54,36 +54,178 @@
 
 /* Estilos para o menu lateral fixo (sidebar) */
 .sidebar {
- width: 250px; /* Largura da barra lateral */
- height: 100vh; /* Altura total da janela */
- background-color: #343a40; /* Fundo escuro */
- color: white; /* Texto branco */
- padding: 100px 20px 20px; /* Espaçamento interno */
- position: fixed; /* Fixa à esquerda do ecrã */
- left: 0;
- top: 0;
- bottom: 0;
+    width: 250px;
+    /* Largura da barra lateral */
+    height: 100vh;
+    /* Altura total da janela */
+    background-color: #343a40;
+    /* Fundo escuro */
+    color: white;
+    /* Texto branco */
+    padding: 100px 20px 20px;
+    /* Espaçamento interno */
+    position: fixed;
+    /* Fixa à esquerda do ecrã */
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
+
 /* Estilos para os links dentro da sidebar */
 .sidebar a {
- display: flex; /* Organização horizontal interna */
- align-items: center; /* Alinhamento vertical ao centro */
- color: white; /* Cor do texto dos links */
- text-decoration: none; /* Remove o sublinhado */
- padding: 10px; /* Espaçamento interno */
- border-radius: 5px; /* Cantos arredondados */
- transition: background 0.3s; /* Animação ao passar o rato */
+    display: flex;
+    /* Organização horizontal interna */
+    align-items: center;
+    /* Alinhamento vertical ao centro */
+    color: white;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    padding: 10px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    transition: background 0.3s;
+    /* Animação ao passar o rato */
 }
+
 .sidebar a:hover {
- background-color: rgb(57, 86, 179);
-} 
+    background-color: rgb(57, 86, 179);
+}
 
 /* Ajuste do conteúdo para não ficar sob a navbar */
 .content {
- margin-left: 250px; /* Afasta o conteúdo da sidebar (largura da sidebar) */
- margin-top: 70px; /* Espaço para não ficar por baixo da navbar */
- flex-grow: 1; /* Permite que o conteúdo cresça conforme o espaço disponível */
- padding: 20px; /* Espaçamento interno para melhor leitura */
+    margin-left: 250px;
+    /* Afasta o conteúdo da sidebar (largura da sidebar) */
+    margin-top: 70px;
+    /* Espaço para não ficar por baixo da navbar */
+    flex-grow: 1;
+    /* Permite que o conteúdo cresça conforme o espaço disponível */
+    padding: 20px;
+    /* Espaçamento interno para melhor leitura */
 }
 
+/* Define o estilo geral da tabela */
+table {
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    border-collapse: collapse;
+    /* Elimina espaços entre as células */
+    margin-top: 20px;
+    /* Espaço acima da tabela */
+    background-color: #fff;
+    /* Fundo branco para a tabela */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Sombra sutil para dar profundidade */
+}
 
+/* Estilização do cabeçalho da tabela */
+thead {
+    background-color: #212529;
+    /* Fundo escuro para o cabeçalho */
+    color: #ffffff;
+    /* Cor do texto em branco */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+/* Define o espaçamento e estilo dos cabeçalhos de coluna */
+thead th {
+    padding: 12px;
+    /* Espaçamento interno em cada célula do cabeçalho */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    text-transform: capitalize;
+    /* Transforma o texto para iniciar com letra maiúscula */
+    letter-spacing: 0.05em;
+    /* Espaçamento entre letras */
+}
+
+/* Estilização do corpo da tabela (células de dados) */
+tbody td {
+    padding: 10px 12px;
+    /* Espaçamento interno nas células */
+    border-bottom: 1px solid #dee2e6;
+    /* Linha inferior para separar as linhas */
+    font-size: 14px;
+    /* Tamanho da fonte para os dados */
+    color: #343a40;
+    /* Cor do texto em tom escuro */
+}
+
+/* Efeito de hover nas linhas da tabela */
+tbody tr:hover {
+    background-color: #f8f9fa;
+    /* Fundo levemente cinza ao passar o rato sobre uma linha */
+}
+
+/* Estilização dos links dentro das células da tabela */
+td a {
+    color: #007bff;
+    /* Cor azul para os links */
+    text-decoration: none;
+    /* Remove sublinhado padrão */
+    font-weight: bold;
+    /* Aplica negrito aos links */
+}
+
+/* Efeito hover nos links da tabela */
+td a:hover {
+    text-decoration: underline;
+    /* Sublinha o link ao passar o rato */
+}
+
+/* Estilização dos separadores (span) dentro das células */
+td span {
+    color: #6c757d;
+    /* Cor em tom de cinza para os separadores */
+    margin: 0 5px;
+    /* Espaço à esquerda e direita dos separadores */
+}
+
+/* Estilização dos Botões Superiores */
+/* Contentor superior que contém o título e o botão de novo cliente */
+.actions-top {
+    display: flex;
+    /* Utiliza o layout flexível */
+    justify-content: space-between;
+    /* Distribui os elementos aos extremos */
+    align-items: center;
+    /* Alinha os elementos verticalmente */
+    margin-bottom: 20px;
+    /* Espaço abaixo do contêiner */
+}
+
+/* Estilização do título na seção de ações */
+.actions-top h2 {
+    font-size: 20px;
+    /* Tamanho da fonte do título */
+    color: #212529;
+    /* Cor do texto para o título */
+}
+
+/* Estilização do link (botão) de novo cliente */
+.actions-top a {
+    display: inline-block;
+    /* Exibe como bloco em linha */
+    padding: 8px 12px;
+    /* Espaçamento interno para o botão */
+    background-color: #495057;
+    /* Fundo escuro para o botão */
+    color: #fff;
+    /* Texto em branco */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    text-decoration: none;
+    /* Sem sublinhado */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    transition: background 0.3s;
+    /* Transição suave para mudança de fundo */
+}
+
+/* Efeito hover para o botão de novo cliente */
+.actions-top a:hover {
+    background-color: #343a40;
+    /* Fundo ainda mais escuro ao passar o rato */
+}
